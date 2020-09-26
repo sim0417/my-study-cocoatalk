@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Cocoa Talk</title>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/3e694fd456.js" crossorigin="anonymous"></script>
-    <!-- Load style -->
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__text">No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-unlock-alt"></i>
-        <span>110%</span>
-        <i class="fas fa-battery-full"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Cocoa Talk</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/3e694fd456.js" crossorigin="anonymous"></script>
+  <!-- Load style -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span class="status-bar__text">No Service</span>
+      <i class="fas fa-wifi"></i>
     </div>
-    <header class="header-welcome">
-      <h1 class="header-welcome__title">Welcome to Cocoa Talk</h1>
-      <p class="header-welcome_text">If you have a Cocoa Account,</p>
-      <p class="header-welcome_text">log in with your email or phone number.</p>
-    </header>
-    <form class="form-login">
-      <input class="form-login__id" type="text" placeholder="Email or phone number" required />
-      <input class="form-login__pwd" type="password" placeholder="Password" required />
-      <input class="form-login__log-in" type="submit" value="Log In" />
-      <input class="form-login__sign-up" type="submit" value="Sign Up" />
-      <a href="#">Find Cocoa Account or Password</a>
-    </form>
-  </body>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <i class="fas fa-unlock-alt"></i>
+      <span>110%</span>
+      <i class="fas fa-battery-full"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+  <header class="header-welcome">
+    <h1 class="header-welcome__title">Welcome to Cocoa Talk</h1>
+    <p class="header-welcome_text">If you have a Cocoa Account,</p>
+    <p class="header-welcome_text">log in with your email or phone number.</p>
+  </header>
+  <form action="friends.html" method="GET" class="form-login">
+    <input class="form-login__id" type="text" placeholder="Email or phone number" required />
+    <input class="form-login__pwd" type="password" placeholder="Password" required />
+    <input class="form-login__log-in" type="submit" value="Log In" />
+    <input class="form-login__sign-up" type="submit" value="Sign Up" />
+    <a href="#">Find Cocoa Account or Password</a>
+  </form>
+</body>
+
 </html>

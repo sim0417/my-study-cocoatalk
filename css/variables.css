@@ -1,4 +1,11 @@
 :root {
   --primary-bg-color: #FAE100;
   --primary-font-color: #000;
+
+  --menu-bg-color: #F9F9FA;
+  --menu-icon-color: #2F363E;
+  --menu-font-color: #191919;
+
+
+  --default-padding: 25px;
 }

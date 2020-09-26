@@ -1,0 +1,17 @@
+.menu-header {
+  padding: var(--default-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--menu-font-color);
+}
+
+.menu-header__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.menu-header__icons>span {
+  margin-left: 20px;
+}

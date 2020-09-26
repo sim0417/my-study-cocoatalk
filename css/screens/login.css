@@ -14,6 +14,7 @@
 
 .header-welcome_text {
   color: #7C7C7C;
+  margin-bottom: 8px;
 }
 
 .form-login {
@@ -32,12 +33,12 @@
 }
 
 .form-login input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   transition: border-bottom 0.2s ease-in;
 }
 
 .form-login input::placeholder {
-  color: rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form-login input:focus {
@@ -52,6 +53,4 @@
 
 .form-login a {
   text-align: center;
-  text-decoration: none;
-  color: inherit;
 }

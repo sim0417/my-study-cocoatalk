@@ -1,0 +1,36 @@
+.menu-tab {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+
+  background-color: var(--menu-bg-color);
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu-tab__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-tab__link {
+  position: relative;
+  color: var(--menu-icon-color);
+}
+
+.menu-tab__notification {
+  position: absolute;
+  left: 10px;
+  top: -5px;
+
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
