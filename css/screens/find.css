@@ -1,0 +1,131 @@
+.find-icons {
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.find-icons__icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-icons__icon i {
+  font-size: 2.0rem;
+}
+
+.find-icons__icon span {
+  margin-top: 20px;
+}
+
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: var(--default-border);
+  border-bottom: var(--default-border);
+}
+
+.recommended-friends__title {
+  font-weight: 500;
+  color: var(--subtitle-font-color);
+}
+
+.recommended-friends__no-content {
+  margin: 80px 0px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--subtitle-font-color);
+  font-weight: 500;
+}
+
+.open-chat__header {
+  margin-bottom: 25px;
+  color: var(--subtitle-font-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat__header h4 {
+  font-weight: 500;
+}
+
+.open-chat__header span {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-post {
+  color: var(--subtitle-font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+}
+
+.open-post__members {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  font-size: 0.75rem;
+}
+
+.open-post__members .divider {
+  width: 1px;
+  height: 14px;
+  margin: 0px 6px;
+  background-color: var(--subtitle-font-color);
+}
+
+.open-post__member-status {
+  color: #FF63C3;
+}
+
+.open-post__thumbnail {
+  position: relative;
+}
+
+.open-post__thumbnail img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__like-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  border-radius: 34px;
+  font-size: 0.75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.open-post__like-box span {
+  margin-left: 5px;
+}

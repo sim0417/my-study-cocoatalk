@@ -33,7 +33,7 @@
 }
 
 .form-login input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: var(--default-border);
   transition: border-bottom 0.2s ease-in;
 }
 

@@ -6,6 +6,8 @@
   --menu-icon-color: #2F363E;
   --menu-font-color: #191919;
 
+  --subtitle-font-color: rgba(0, 0, 0, 0.5);
 
   --default-padding: 25px;
+  --default-border: 1px solid rgba(0, 0, 0, 0.3);
 }
