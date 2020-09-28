@@ -1,0 +1,33 @@
+.settings-setting {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.settings-setting:last-child {
+  border-bottom: none;
+}
+
+.settings-setting i {
+  width: 35px;
+  font-size: 1rem;
+  color: var(--subtitle-font-color);
+}
+
+.setting__column {
+  display: flex;
+}
+
+.setting__column span {
+  margin-right: 10px;
+}
+
+.setting__column:last-child {
+  color: var(--subtitle-font-color);
+}

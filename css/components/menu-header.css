@@ -16,3 +16,25 @@
 .menu-header__icons>span {
   margin-left: 20px;
 }
+
+
+.menu-header-alt {
+  padding: var(--default-padding);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-header-alt__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-header-alt__column:first-child {
+  margin-right: auto;
+}
+
+.menu-header-alt__column:last-child {
+  margin-left: auto;
+}
