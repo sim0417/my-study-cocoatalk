@@ -1,0 +1,128 @@
+.chat-screen {
+  height: 1000vh;
+  background-color: var(--chat-bg-color);
+}
+
+.chat-screen .status-bar,
+.chat-screen .menu-header-alt {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--chat-bg-color);
+  position: fixed;
+  top: 0;
+}
+
+.chat-screen .status-bar {
+  z-index: 2;
+}
+
+.chat-screen .menu-header-alt {
+  z-index: 1;
+  top: 10px;
+}
+
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92A4B2;
+  padding: 15px;
+  border-radius: 32px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.message__sender {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.message__sender,
+.message__time {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.message__box {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.message__bubble {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 1.25rem;
+
+  position: relative;
+}
+
+.message__bubble::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -9px;
+  border: 9px solid transparent;
+  border-right-color: white;
+  border-left: 0;
+  border-top: 0;
+}
+
+.message__bubble::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -9px;
+  width: 9px;
+  height: 9px;
+  border-top-right-radius: 11px;
+  background-color: var(--chat-bg-color);
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__box {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--primary-bg-color);
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
+.message-row--own .message__bubble::before {
+  left: unset;
+  right: -9px;
+  border-right-color: transparent;
+  border-left: 9px solid var(--primary-bg-color);
+  border-right: 0;
+}
+
+.message-row--own .message__bubble::after {
+  left: unset;
+  right: -10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 11px;
+}

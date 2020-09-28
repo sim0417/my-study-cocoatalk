@@ -17,7 +17,6 @@
   margin-left: 20px;
 }
 
-
 .menu-header-alt {
   padding: var(--default-padding);
   margin-bottom: 15px;
@@ -31,10 +30,25 @@
   font-weight: 600;
 }
 
+.menu-header-alt__column {
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+
 .menu-header-alt__column:first-child {
   margin-right: auto;
 }
 
+.menu-header-alt__column:nth-child(2) {
+  justify-content: center;
+}
+
 .menu-header-alt__column:last-child {
   margin-left: auto;
+  justify-content: flex-end;
+}
+
+.menu-header-alt__column:last-child i {
+  margin-left: 20px;
 }
