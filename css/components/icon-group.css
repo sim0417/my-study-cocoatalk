@@ -1,0 +1,25 @@
+.icon-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-group--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 35px;
+}
+
+.icon-group__icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-group__icon i {
+  font-size: 2.0rem;
+}
+
+.icon-group__icon span {
+  margin-top: 20px;
+}

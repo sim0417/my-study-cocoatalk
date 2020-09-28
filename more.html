@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cocoa Talk - Friends</title>
+  <title>Cocoa Talk - More</title>
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/3e694fd456.js" crossorigin="anonymous"></script>
   <!-- Load style -->
@@ -29,62 +29,86 @@
   </section>
 
   <header class="menu-header">
-    <h1 class="menu-header__title">Friends</h1>
+    <h1 class="menu-header__title">More</h1>
     <div class="menu-header__icons">
       <span><i class="fas fa-search fa-lg"></i></span>
       <span><i class="fas fa-music fa-lg"></i></span>
-      <span><i class="fas fa-cog fa-lg"></i></span>
+      <span><a href="settings.header-welcome__title" class="fas fa-cog fa-lg"></a></span>
     </div>
   </header>
 
-  <a class="friends-display-link">
-    <i class="fas fa-info-circle"></i>
-    Friends' Names Display
-    <i class="fas fa-chevron-right fa-xs"></i>
-  </a>
-
-  <main class="main-screen friends-screen">
+  <main class="main-screen more-screen">
     <section class="user-component">
       <article class="user-component__column">
-        <img class="user-component__profile user-component__profile--xl" src="./img/profile_1.jpg" alt="profile_1">
+        <img class="user-component__profile" src="./img/profile_1.jpg" alt="profile1">
         <div class="user-component__text">
           <h4 class="user-component__name">Nicolas</h4>
-          <!-- <h6 class="user-component__status">Status message</h6> -->
+          <h6 class="user-component__status">+82 010-6412-9861</h6>
+          <!-- TODO make info icon -->
         </div>
       </article>
       <article class="user-component__column">
+        <i class="far fa-comment-alt fa-2x"></i>
       </article>
     </section>
 
-    <section class="friends-screen__channel">
-      <article class="friends-screen__channel-header">
-        <span>Channel</span>
-        <i class="fas fa-chevron-up fa-xs"></i>
-      </article>
+    <section class="icon-group icon-group--grid">
+      <div class="icon-group__icon">
+        <i class="far fa-calendar-check"></i>
+        <span>Calendar</span>
+      </div>
+      <div class="icon-group__icon">
+        <i class="fas fa-inbox"></i>
+        <span>Talk Drive</span>
+      </div>
+      <div class="icon-group__icon">
+        <i class="far fa-smile-wink"></i>
+        <span>Emoticons</span>
+      </div>
+      <div class="icon-group__icon">
+        <i class="fas fa-palette"></i>
+        <span>Themes</span>
+      </div>
+      <div class="icon-group__icon">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <span>Account</span>
+      </div>
+      <div class="icon-group__icon">
+        <i class="far fa-comments"></i>
+        <span>Openchat</span>
+      </div>
+    </section>
 
-      <article class="user-component">
-        <div class="user-component__column">
-          <img class="user-component__profile user-component__profile--xs" src="./img/profile_2.jpg" alt="profile_2">
-          <div class="user-component__text">
-            <h4 class="user-component__name user-component__name--regular">Lynne</h4>
+    <section class="more-suggestions">
+      <h4 class="more-suggestions__title">Suggestions</h4>
+      <article class="more-suggestions__icon-group">
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fab fa-twitter fa-2x"></i>
           </div>
+          <span class="more-suggestions__icon-text">Twitter</span>
         </div>
-        <div class="user-component__column">
-          <div>
-            <span>2</span>
-            <i class="fas fa-chevron-right"></i>
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fab fa-youtube fa-2x"></i>
           </div>
+          <span class="more-suggestions__icon-text">Youtube</span>
+        </div>
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+          <span class="more-suggestions__icon-text">Instagram</span>
         </div>
       </article>
     </section>
-
   </main>
 
   <nav class="menu-tab">
     <ul class="menu-tab__list">
       <li class="menu-tab__item">
         <a class="menu-tab__link" href="friends.html">
-          <i class="fas fa-user fa-lg"></i>
+          <i class="far fa-user fa-lg"></i>
         </a>
       </li>
       <li class="menu-tab__item">
