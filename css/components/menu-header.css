@@ -52,3 +52,18 @@
 .menu-header-alt__column:last-child i {
   margin-left: 20px;
 }
+
+
+.menu-header__icons .fa-cog:hover {
+  animation: rotateAnimation 1s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -103,8 +103,32 @@
   position: absolute;
   bottom: 5px;
   right: 5px;
+
+  cursor: pointer;
 }
 
 .open-post__like-box span {
   margin-left: 5px;
+}
+
+.open-post__like-box:hover i {
+  will-change: transform;
+  animation: heartBeatAnimation 1s ease-in-out infinite;
+}
+
+@keyframes heartBeatAnimation {
+  0% {
+    color: white;
+    transform: none;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+
+  100% {
+    color: white;
+    transform: none;
+  }
 }

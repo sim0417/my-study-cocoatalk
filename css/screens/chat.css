@@ -1,5 +1,5 @@
 .chat-screen {
-  height: 1000vh;
+  height: 500vh;
   background-color: var(--chat-bg-color);
 }
 
@@ -27,6 +27,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  animation: fadeInAnimation 0.4s linear;
 }
 
 .chat__timestamp {
@@ -139,6 +141,8 @@
 
   position: fixed;
   bottom: 0;
+
+  transition: transform 0.3s linear;
 }
 
 .reply .reply__column:first-child {
@@ -155,6 +159,8 @@
   width: 100%;
   border: var(--default-border);
   border-radius: 32px;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
 }
 
 .reply i {
@@ -164,13 +170,13 @@
 .reply__column:last-child>i,
 .reply__column:last-child button {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 50%;
   transform: translate(50%, -50%);
 }
 
 .reply__column:last-child>i {
-  right: 40px;
+  right: 60px;
   top: 50%;
   transform: translate(50%, -50%);
 }
@@ -191,3 +197,41 @@
 .reply__column button:active {
   outline: none;
 }
+
+.reply .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within {
+  will-change: translateY;
+  transform: translateY(80px);
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  will-change: translateX, translateY;
+  width: 95vw;
+  transform: translateX(-6%) translateY(-80px);
+}
+
+
+@keyframes fadeInAnimation {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* TODO make chat animation sliding from side */

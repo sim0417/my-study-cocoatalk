@@ -1,0 +1,25 @@
+.mobile-only {
+  width: 100vw;
+  height: 100vh;
+  color: #3C1E1E;
+  background-color: var(--primary-bg-color);
+
+  font-size: 3.0rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+
+  position: fixed;
+  z-index: 99;
+}
+
+/* TODO make we not provide landscape screen */
+
+@media screen and (max-width:645px) {
+  .mobile-only {
+    display: none;
+  }
+}

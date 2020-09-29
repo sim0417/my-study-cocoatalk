@@ -27,3 +27,32 @@
   display: flex;
   justify-content: space-between;
 }
+
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  font-size: 5rem;
+  color: #3C1E1E;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+
+  animation: hideAnimation 0.3s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
